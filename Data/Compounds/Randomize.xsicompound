@@ -1,0 +1,1969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Randomize" tasks="Motion Tools/Modifiers" author="Gustavo E Boehs" url="http://www.gustavoeb.com.br/blog" formatversion="1.4" compoundversion="1.0" versiontag="" constructionmode="Current" backgroundcolor="12228200">
+	<description><![CDATA[Randomizes values in transforms and colors. 0 means no randomization and any other number will indicate SI units of randomness]]></description>
+	<definition>
+		<nodes>
+			<node type="IfNode" index="0">
+				<param name="condition" type="11" value="false"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1185</prop>
+					<prop name="posy">702</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_0]" index="1">
+				<param name="In_Name_Reference" type="31" value="Self"></param>
+				<param_ext name="In_Name_Reference" type="31" value="Self"></param_ext>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-186</prop>
+					<prop name="posy">-1193</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_1]" index="2">
+				<param name="Reference" type="31" value="Self.Scale"></param>
+				<param_ext name="Reference" type="31" value="Self.Scale"></param_ext>
+				<datablob category="ui_infos">
+					<prop name="posx">-407</prop>
+					<prop name="posy">-1084</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="3">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.748000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">2</prop>
+					<prop name="posy">-786</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="4">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="1.156000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">2</prop>
+					<prop name="posy">-1209</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="5">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.408000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">2</prop>
+					<prop name="posy">-959</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ScalarTo3DVectorNode" index="6">
+				<param name="x" type="4" value="0.000000"></param>
+				<param name="y" type="4" value="0.000000"></param>
+				<param name="z" type="4" value="0.000000"></param>
+				<portdef name="x" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="y" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="z" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">167</prop>
+					<prop name="posy">-974</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_2]" index="7">
+				<param name="In_Name_Reference" type="31" value="Self"></param>
+				<param_ext name="In_Name_Reference" type="31" value="Self"></param_ext>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-186</prop>
+					<prop name="posy">-520</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_3]" index="8">
+				<param name="Reference" type="31" value="Self.Color"></param>
+				<param name="Color.Color_red" type="4" value="0.000000"></param>
+				<param name="Color.Color_green" type="4" value="0.000000"></param>
+				<param name="Color.Color_blue" type="4" value="1.000000"></param>
+				<param name="Color.Color_alpha" type="4" value="1.000000"></param>
+				<param_ext name="Reference" type="31" value="Self.Color"></param_ext>
+				<portdef name="Color" type="512" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">968</prop>
+					<prop name="posy">904</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_4]" index="9">
+				<param name="Reference" type="31" value="Self.Scale"></param>
+				<param name="Scale.Scale_x" type="4" value="1.000000"></param>
+				<param name="Scale.Scale_y" type="4" value="1.000000"></param>
+				<param name="Scale.Scale_z" type="4" value="1.000000"></param>
+				<param_ext name="Reference" type="31" value="Self.Scale"></param_ext>
+				<portdef name="Scale" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">786</prop>
+					<prop name="posy">-818</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="3DVectorToScalarNode" index="10">
+				<param name="vector.vector_x" type="4" value="0.000000"></param>
+				<param name="vector.vector_y" type="4" value="0.000000"></param>
+				<param name="vector.vector_z" type="4" value="0.000000"></param>
+				<portdef name="vector" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-225</prop>
+					<prop name="posy">-411</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToRGBANode" index="11">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">394</prop>
+					<prop name="posy">579</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="3DVectorToScalarNode" index="12">
+				<param name="vector.vector_x" type="4" value="0.000000"></param>
+				<param name="vector.vector_y" type="4" value="0.000000"></param>
+				<param name="vector.vector_z" type="4" value="0.000000"></param>
+				<portdef name="vector" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-225</prop>
+					<prop name="posy">-1084</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="3DVectorToScalarNode" index="13">
+				<param name="vector.vector_x" type="4" value="0.000000"></param>
+				<param name="vector.vector_y" type="4" value="0.000000"></param>
+				<param name="vector.vector_z" type="4" value="0.000000"></param>
+				<portdef name="vector" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-29</prop>
+					<prop name="posy">60</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_5]" index="14">
+				<param name="Randomized_Channel" type="3" value="0"></param>
+				<param name="Seed" type="3" value="12345"></param>
+				<param name="Animated" type="11" value="false"></param>
+				<param name="Mean_Value.Mean_Value_red" type="4" value="1.000000"></param>
+				<param name="Mean_Value.Mean_Value_green" type="4" value="1.000000"></param>
+				<param name="Mean_Value.Mean_Value_blue" type="4" value="1.000000"></param>
+				<param name="Mean_Value.Mean_Value_alpha" type="4" value="1.000000"></param>
+				<param name="Variance" type="4" value="0.000000"></param>
+				<portdef name="Seed" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Variance" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Animated" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Mean_Value" type="512" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Randomized_Channel" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">183</prop>
+					<prop name="posy">720</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_6]" index="15">
+				<param name="Reference" type="31" value="Self.Color"></param>
+				<param_ext name="Reference" type="31" value="Self.Color"></param_ext>
+				<datablob category="ui_infos">
+					<prop name="posx">-16</prop>
+					<prop name="posy">720</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_7]" index="16">
+				<param name="Reference" type="31" value="Self.PointPosition"></param>
+				<param_ext name="Reference" type="31" value="Self.PointPosition"></param_ext>
+				<datablob category="ui_infos">
+					<prop name="posx">-218</prop>
+					<prop name="posy">60</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_8]" index="17">
+				<param name="Reference" type="31" value="Self.Orientation"></param>
+				<param_ext name="Reference" type="31" value="Self.Orientation"></param_ext>
+				<datablob category="ui_infos">
+					<prop name="posx">-630</prop>
+					<prop name="posy">-411</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_9]" index="18">
+				<param name="Reference" type="31" value="Self.Orientation"></param>
+				<param name="Orientation.Orientation_x" type="4" value="1.000000"></param>
+				<param name="Orientation.Orientation_y" type="4" value="0.000000"></param>
+				<param name="Orientation.Orientation_z" type="4" value="0.000000"></param>
+				<param name="Orientation.Orientation_angle" type="4" value="0.000000"></param>
+				<param_ext name="Reference" type="31" value="Self.Orientation"></param_ext>
+				<portdef name="Orientation" type="16384" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">747</prop>
+					<prop name="posy">-278</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="[embedded_10]" index="19">
+				<param name="Reference" type="31" value="Self.PointPosition"></param>
+				<param name="Position.Position_x" type="4" value="0.000000"></param>
+				<param name="Position.Position_y" type="4" value="0.000000"></param>
+				<param name="Position.Position_z" type="4" value="0.000000"></param>
+				<param_ext name="Reference" type="31" value="Self.PointPosition"></param_ext>
+				<portdef name="Position" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">779</prop>
+					<prop name="posy">257</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ExecuteNode" index="20">
+				<portdef name="port1" type="4096" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="port2" type="4096" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1151</prop>
+					<prop name="posy">287</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ScalarTo3DVectorNode" index="21">
+				<param name="x" type="4" value="0.000000"></param>
+				<param name="y" type="4" value="0.000000"></param>
+				<param name="z" type="4" value="0.000000"></param>
+				<portdef name="x" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="y" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="z" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">167</prop>
+					<prop name="posy">-278</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="EulerToRotationNode" index="22">
+				<param name="rotationorder" type="3" value="0"></param>
+				<param name="rotationxyz.rotationxyz_x" type="4" value="10.000000"></param>
+				<param name="rotationxyz.rotationxyz_y" type="4" value="5.517000"></param>
+				<param name="rotationxyz.rotationxyz_z" type="4" value="10.000000"></param>
+				<portdef name="rotationxyz" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">375</prop>
+					<prop name="posy">-278</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="23">
+				<param name="first.first_x" type="4" value="1.000000"></param>
+				<param name="first.first_y" type="4" value="0.000000"></param>
+				<param name="first.first_z" type="4" value="0.000000"></param>
+				<param name="first.first_angle" type="4" value="0.000000"></param>
+				<param name="second.second_x" type="4" value="1.000000"></param>
+				<param name="second.second_y" type="4" value="0.000000"></param>
+				<param name="second.second_z" type="4" value="0.000000"></param>
+				<param name="second.second_angle" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="16384" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="16384" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">-278</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="24">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">198</prop>
+					<prop name="posy">406</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="25">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">2</prop>
+					<prop name="posy">-490</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="26">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">2</prop>
+					<prop name="posy">-286</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="27">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">2</prop>
+					<prop name="posy">-113</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="28">
+				<param name="first.first_x" type="4" value="0.000000"></param>
+				<param name="first.first_y" type="4" value="0.000000"></param>
+				<param name="first.first_z" type="4" value="0.000000"></param>
+				<param name="second.second_x" type="4" value="0.000000"></param>
+				<param name="second.second_y" type="4" value="0.000000"></param>
+				<param name="second.second_z" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="16" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">257</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="29">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">1018</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="30">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">399</prop>
+					<prop name="posy">-613</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ScalarTo3DVectorNode" index="31">
+				<param name="x" type="4" value="0.000000"></param>
+				<param name="y" type="4" value="0.000000"></param>
+				<param name="z" type="4" value="0.000000"></param>
+				<portdef name="x" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="y" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="z" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">363</prop>
+					<prop name="posy">257</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="32">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">1159</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="33">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">877</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="34">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">649</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="35">
+				<param name="in" type="3" value="12345"></param>
+				<portdef name="in" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-189</prop>
+					<prop name="posy">-1286</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="36">
+				<param name="first.first_x" type="4" value="0.000000"></param>
+				<param name="first.first_y" type="4" value="0.000000"></param>
+				<param name="first.first_z" type="4" value="0.000000"></param>
+				<param name="second.second_x" type="4" value="0.000000"></param>
+				<param name="second.second_y" type="4" value="0.000000"></param>
+				<param name="second.second_z" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="true"></param>
+				<portdef name="first" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="16" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">-818</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RGBAToColorNode" index="37">
+				<param name="red" type="4" value="0.000000"></param>
+				<param name="green" type="4" value="0.000000"></param>
+				<param name="blue" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="red" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="green" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blue" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">803</prop>
+					<prop name="posy">904</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RotationToEulerNode" index="38">
+				<param name="rotationorder" type="3" value="0"></param>
+				<param name="rotation.rotation_x" type="4" value="1.000000"></param>
+				<param name="rotation.rotation_y" type="4" value="0.000000"></param>
+				<param name="rotation.rotation_z" type="4" value="0.000000"></param>
+				<param name="rotation.rotation_angle" type="4" value="0.000000"></param>
+				<portdef name="rotation" type="16384" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-409</prop>
+					<prop name="posy">-411</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="39">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">198</prop>
+					<prop name="posy">233</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="40">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">195</prop>
+					<prop name="posy">57</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AbsoluteValueNode" index="41">
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="0.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<portdef name="value" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">390</prop>
+					<prop name="posy">-974</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ScalarNode" index="42">
+				<param name="value" type="4" value="0.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1169</prop>
+					<prop name="posy">1370</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="43">
+				<param name="condition" type="11" value="true"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1140</prop>
+					<prop name="posy">-89</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="44">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-712</prop>
+					<prop name="posy">-1086</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="45">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-714</prop>
+					<prop name="posy">-1056</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToRGBANode" index="46">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">394</prop>
+					<prop name="posy">720</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SelectCaseNode" index="47">
+				<param name="condition" type="3" value="0"></param>
+				<portdef name="condition" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="case0" type="4096" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="case1" type="4096" structure="1" group="1" instance="1" port="0"></portdef>
+				<portdef name="case2" type="4096" structure="1" group="1" instance="2" port="0"></portdef>
+				<portdef name="default" type="4096" structure="1" group="2" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1005</prop>
+					<prop name="posy">-313</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="48">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-714</prop>
+					<prop name="posy">-1115</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="condition" username="Enable1" basename="Enable" portlabel="Enable1" exposetype="single"> </port>
+			<port index="14" portname="Randomized_Channel" username="Channel" basename="Channel" portlabel="Channel" exposetype="single"> </port>
+			<port index="14" portname="Variance" username="Variance" basename="Variance" portlabel="Variance" exposetype="single"> </port>
+			<port index="20" portname="execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="30" portname="in" username="Blend" basename="Blend" portlabel="Blend" exposetype="single"> </port>
+			<port index="35" portname="in" username="Seed" basename="Seed" portlabel="Seed" exposetype="single"> </port>
+			<port index="42" portname="result" username="Modulate" basename="Modulate" portlabel="Modulate" exposetype="single"> </port>
+			<port index="43" portname="condition" username="Enable" basename="Enable" portlabel="Enable" exposetype="single"> </port>
+			<port index="44" portname="in" username="Y" basename="Y" portlabel="Y" exposetype="single"> </port>
+			<port index="45" portname="in" username="Z" basename="Z" portlabel="Z" exposetype="single"> </port>
+			<port index="47" portname="condition" username="Mode" basename="Mode" portlabel="Mode" exposetype="single"> </port>
+			<port index="48" portname="in" username="X" basename="X" portlabel="X" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="3" from_port="value" to_node="6" to_port="z"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="6" to_port="x"> </cnx>
+			<cnx from_node="5" from_port="value" to_node="6" to_port="y"> </cnx>
+			<cnx from_node="0" from_port="result" to_node="20" to_port="port2"> </cnx>
+			<cnx from_node="43" from_port="result" to_node="20" to_port="port1"> </cnx>
+			<cnx from_node="6" from_port="vector" to_node="41" to_port="value"> </cnx>
+			<cnx from_node="10" from_port="x" to_node="25" to_port="meanvalue"> </cnx>
+			<cnx from_node="10" from_port="y" to_node="26" to_port="meanvalue"> </cnx>
+			<cnx from_node="10" from_port="z" to_node="27" to_port="meanvalue"> </cnx>
+			<cnx from_node="11" from_port="red" to_node="34" to_port="first"> </cnx>
+			<cnx from_node="11" from_port="green" to_node="33" to_port="first"> </cnx>
+			<cnx from_node="11" from_port="blue" to_node="29" to_port="first"> </cnx>
+			<cnx from_node="11" from_port="alpha" to_node="32" to_port="first"> </cnx>
+			<cnx from_node="12" from_port="z" to_node="3" to_port="meanvalue"> </cnx>
+			<cnx from_node="12" from_port="x" to_node="4" to_port="meanvalue"> </cnx>
+			<cnx from_node="12" from_port="y" to_node="5" to_port="meanvalue"> </cnx>
+			<cnx from_node="13" from_port="x" to_node="40" to_port="meanvalue"> </cnx>
+			<cnx from_node="13" from_port="y" to_node="39" to_port="meanvalue"> </cnx>
+			<cnx from_node="13" from_port="z" to_node="24" to_port="meanvalue"> </cnx>
+			<cnx from_node="8" from_port="Execute" to_node="0" to_port="iftrue"> </cnx>
+			<cnx from_node="9" from_port="Execute" to_node="47" to_port="case0"> </cnx>
+			<cnx from_node="7" from_port="Point_ID" to_node="25" to_port="id"> </cnx>
+			<cnx from_node="7" from_port="Point_ID" to_node="26" to_port="id"> </cnx>
+			<cnx from_node="7" from_port="Point_ID" to_node="27" to_port="id"> </cnx>
+			<cnx from_node="7" from_port="Point_ID" to_node="40" to_port="id"> </cnx>
+			<cnx from_node="7" from_port="Point_ID" to_node="39" to_port="id"> </cnx>
+			<cnx from_node="7" from_port="Point_ID" to_node="24" to_port="id"> </cnx>
+			<cnx from_node="2" from_port="Scale" to_node="12" to_port="vector"> </cnx>
+			<cnx from_node="2" from_port="Scale" to_node="36" to_port="first"> </cnx>
+			<cnx from_node="1" from_port="Point_ID" to_node="3" to_port="id"> </cnx>
+			<cnx from_node="1" from_port="Point_ID" to_node="4" to_port="id"> </cnx>
+			<cnx from_node="1" from_port="Point_ID" to_node="5" to_port="id"> </cnx>
+			<cnx from_node="14" from_port="Random_Color" to_node="46" to_port="color"> </cnx>
+			<cnx from_node="15" from_port="Color" to_node="11" to_port="color"> </cnx>
+			<cnx from_node="15" from_port="Color" to_node="14" to_port="Mean_Value"> </cnx>
+			<cnx from_node="16" from_port="Value" to_node="28" to_port="first"> </cnx>
+			<cnx from_node="16" from_port="Value" to_node="13" to_port="vector"> </cnx>
+			<cnx from_node="17" from_port="Orientation" to_node="23" to_port="first"> </cnx>
+			<cnx from_node="17" from_port="Orientation" to_node="38" to_port="rotation"> </cnx>
+			<cnx from_node="18" from_port="Execute" to_node="47" to_port="case1"> </cnx>
+			<cnx from_node="19" from_port="Execute" to_node="47" to_port="case2"> </cnx>
+			<cnx from_node="21" from_port="vector" to_node="22" to_port="rotationxyz"> </cnx>
+			<cnx from_node="22" from_port="rotation" to_node="23" to_port="second"> </cnx>
+			<cnx from_node="23" from_port="result" to_node="18" to_port="Orientation"> </cnx>
+			<cnx from_node="28" from_port="result" to_node="19" to_port="Position"> </cnx>
+			<cnx from_node="29" from_port="result" to_node="37" to_port="blue"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="34" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="33" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="29" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="32" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="36" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="23" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="28" to_port="blend"> </cnx>
+			<cnx from_node="30" from_port="out" to_node="42" to_port="value"> </cnx>
+			<cnx from_node="31" from_port="vector" to_node="28" to_port="second"> </cnx>
+			<cnx from_node="32" from_port="result" to_node="37" to_port="alpha"> </cnx>
+			<cnx from_node="33" from_port="result" to_node="37" to_port="green"> </cnx>
+			<cnx from_node="34" from_port="result" to_node="37" to_port="red"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="3" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="4" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="5" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="14" to_port="Seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="25" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="26" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="27" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="40" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="39" to_port="seed"> </cnx>
+			<cnx from_node="35" from_port="out" to_node="24" to_port="seed"> </cnx>
+			<cnx from_node="36" from_port="result" to_node="9" to_port="Scale"> </cnx>
+			<cnx from_node="37" from_port="color" to_node="8" to_port="Color"> </cnx>
+			<cnx from_node="38" from_port="rotationxyz" to_node="10" to_port="vector"> </cnx>
+			<cnx from_node="41" from_port="result" to_node="36" to_port="second"> </cnx>
+			<cnx from_node="44" from_port="out" to_node="5" to_port="variance"> </cnx>
+			<cnx from_node="44" from_port="out" to_node="26" to_port="variance"> </cnx>
+			<cnx from_node="44" from_port="out" to_node="39" to_port="variance"> </cnx>
+			<cnx from_node="45" from_port="out" to_node="3" to_port="variance"> </cnx>
+			<cnx from_node="45" from_port="out" to_node="27" to_port="variance"> </cnx>
+			<cnx from_node="45" from_port="out" to_node="24" to_port="variance"> </cnx>
+			<cnx from_node="46" from_port="red" to_node="34" to_port="second"> </cnx>
+			<cnx from_node="46" from_port="green" to_node="33" to_port="second"> </cnx>
+			<cnx from_node="46" from_port="blue" to_node="29" to_port="second"> </cnx>
+			<cnx from_node="46" from_port="alpha" to_node="32" to_port="second"> </cnx>
+			<cnx from_node="48" from_port="out" to_node="4" to_port="variance"> </cnx>
+			<cnx from_node="48" from_port="out" to_node="25" to_port="variance"> </cnx>
+			<cnx from_node="48" from_port="out" to_node="40" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="value" to_node="31" to_port="z"> </cnx>
+			<cnx from_node="25" from_port="value" to_node="21" to_port="x"> </cnx>
+			<cnx from_node="26" from_port="value" to_node="21" to_port="y"> </cnx>
+			<cnx from_node="27" from_port="value" to_node="21" to_port="z"> </cnx>
+			<cnx from_node="39" from_port="value" to_node="31" to_port="y"> </cnx>
+			<cnx from_node="40" from_port="value" to_node="31" to_port="x"> </cnx>
+			<cnx from_node="47" from_port="result" to_node="43" to_port="iftrue"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Blend" min="0" max="1"> </item>
+			<item type="input" name="Seed" min="12345" max="99999"> </item>
+			<group type="input" name="Transforms" collapsed="false">
+				<item type="input" name="Enable" min="0" max="0"> </item>
+				<item type="input" name="Mode" min="0" max="0">
+					<enum value="0"><![CDATA[Scale]]></enum>
+					<enum value="1"><![CDATA[Rotation]]></enum>
+					<enum value="2"><![CDATA[Translation]]></enum>
+				</item>
+				<item type="input" name="X" min="0" max="0"> </item>
+				<item type="input" name="Y" min="0" max="0"> </item>
+				<item type="input" name="Z" min="0" max="0"> </item>
+			</group>
+			<group type="input" name="Colors" collapsed="false">
+				<item type="input" name="Enable1" min="0" max="0"> </item>
+				<item type="input" name="Channel" min="0" max="0">
+					<enum value="0"><![CDATA[RGB]]></enum>
+					<enum value="1"><![CDATA[Red]]></enum>
+					<enum value="2"><![CDATA[Green]]></enum>
+					<enum value="3"><![CDATA[Blue]]></enum>
+					<enum value="4"><![CDATA[Hue]]></enum>
+					<enum value="5"><![CDATA[Lightness]]></enum>
+					<enum value="6"><![CDATA[Saturation]]></enum>
+					<enum value="7"><![CDATA[Alpha]]></enum>
+				</item>
+				<item type="input" name="Variance" min="0" max="1"> </item>
+			</group>
+			<item type="output" name="Execute"> </item>
+			<item type="output" name="Modulate" min="0" max="0"> </item>
+		</layout>
+	</definition>
+	<embedded_0 name="Get Point ID" category="Data Access" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="6732954">
+	<description><![CDATA[This compound lets you access the ID of a point in a mesh, or a particle in a point cloud. Particles have a Point ID for each point that you can access directly using a Get Data node, but polygon meshes do not have this. This compound is used in compounds that need the ID of a particle to generate things like random values. If you use this compound, rather than accessing the point ID directly, any compound you build with it can be used on both meshes and point clouds. Plug its Point ID output into any port that accepts integers per point of a point cloud.]]></description>
+		<nodes>
+			<node type="FirstValidNode" index="0">
+				<param name="in1" type="3" value="0"></param>
+				<param name="in2" type="3" value="0"></param>
+				<portdef name="in1" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="in2" type="2" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-73</prop>
+					<prop name="posy">447</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetElementIndicesNode" index="1">
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="0.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<portdef name="value" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-280</prop>
+					<prop name="posy">570</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="2">
+				<param name="reference" type="31" value=".PointPosition"></param>
+				<param_ext name="reference" type="31" value=".PointPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-486</prop>
+					<prop name="posy">572</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="3">
+				<param name="reference" type="31" value="ID"></param>
+				<param_ext name="reference" type="31" value="ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-208</prop>
+					<prop name="posy">441</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="4">
+				<param name="reference" type="31" value="Self"></param>
+				<param_ext name="reference" type="31" value="Self"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-595</prop>
+					<prop name="posy">471</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="out" username="Point_ID" basename="Point ID" portlabel="Point ID" exposetype="single"> </port>
+			<port index="4" portname="inname" username="In_Name" basename="In Name" portlabel="In Name" exposetype="single">
+				<description><![CDATA[Point cloud or polygon mesh whose point ID you want to access.]]></description>
+			</port>
+			<port index="4" portname="reference" username="In_Name_Reference" basename="In Name Reference" portlabel="In Name Reference" exposetype="single">
+				<description><![CDATA[The reference object for the point ID.]]></description>
+			</port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="2" from_port="value" to_node="1" to_port="value"> </cnx>
+			<cnx from_node="3" from_port="value" to_node="0" to_port="in1"> </cnx>
+			<cnx from_node="4" from_port="outname" to_node="2" to_port="inname"> </cnx>
+			<cnx from_node="4" from_port="outname" to_node="3" to_port="inname"> </cnx>
+			<cnx from_node="1" from_port="indices" to_node="0" to_port="in2"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="In_Name"> </item>
+			<item type="input" name="In_Name_Reference"> </item>
+			<item type="output" name="Point_ID"> </item>
+		</layout>
+	</embedded_0>
+	<embedded_1 name="Get Particle Scale" tasks="Particles/Getters" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="12228200">
+	<description><![CDATA[This compound gets the particle's current scale (XYZ) data as set by its Scale attribute. You can output the Scale value as a 3D vector.]]></description>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="Self.Scale"></param>
+				<param_ext name="reference" type="31" value="Self.Scale"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-345</prop>
+					<prop name="posy">255</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="value" username="Scale" basename="Scale" portlabel="Scale" exposetype="single"> </port>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The particle's Scale attribute. Click the Explorer button to open up an explorer and select a different particle attribute.]]></description>
+			</port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Scale"> </item>
+		</layout>
+	</embedded_1>
+	<embedded_2 name="Get Point ID" category="Data Access" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="6732954">
+	<description><![CDATA[This compound lets you access the ID of a point in a mesh, or a particle in a point cloud. Particles have a Point ID for each point that you can access directly using a Get Data node, but polygon meshes do not have this. This compound is used in compounds that need the ID of a particle to generate things like random values. If you use this compound, rather than accessing the point ID directly, any compound you build with it can be used on both meshes and point clouds. Plug its Point ID output into any port that accepts integers per point of a point cloud.]]></description>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value=".PointPosition"></param>
+				<param_ext name="reference" type="31" value=".PointPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-486</prop>
+					<prop name="posy">572</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="Self"></param>
+				<param_ext name="reference" type="31" value="Self"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-595</prop>
+					<prop name="posy">471</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="FirstValidNode" index="2">
+				<param name="in1" type="3" value="0"></param>
+				<param name="in2" type="3" value="0"></param>
+				<portdef name="in1" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="in2" type="2" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-73</prop>
+					<prop name="posy">447</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetElementIndicesNode" index="3">
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="0.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<portdef name="value" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-280</prop>
+					<prop name="posy">570</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="4">
+				<param name="reference" type="31" value="ID"></param>
+				<param_ext name="reference" type="31" value="ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-208</prop>
+					<prop name="posy">441</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="1" portname="inname" username="In_Name" basename="In Name" portlabel="In Name" exposetype="single">
+				<description><![CDATA[Point cloud or polygon mesh whose point ID you want to access.]]></description>
+			</port>
+			<port index="1" portname="reference" username="In_Name_Reference" basename="In Name Reference" portlabel="In Name Reference" exposetype="single">
+				<description><![CDATA[The reference object for the point ID.]]></description>
+			</port>
+			<port index="2" portname="out" username="Point_ID" basename="Point ID" portlabel="Point ID" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="0" from_port="value" to_node="3" to_port="value"> </cnx>
+			<cnx from_node="1" from_port="outname" to_node="0" to_port="inname"> </cnx>
+			<cnx from_node="1" from_port="outname" to_node="4" to_port="inname"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="2" to_port="in1"> </cnx>
+			<cnx from_node="3" from_port="indices" to_node="2" to_port="in2"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="In_Name"> </item>
+			<item type="input" name="In_Name_Reference"> </item>
+			<item type="output" name="Point_ID"> </item>
+		</layout>
+	</embedded_2>
+	<embedded_3 name="Set Particle Color" tasks="Particles/Setters" formatversion="1.4" compoundversion="1.0" constructionmode="Modeling" backgroundcolor="12228200">
+	<description><![CDATA[This compound lets you set the particle's color value, using the particle's Color attribute as a reference. Plug its Execute output into the Execute on Emit port of an Emit compound to set this value once, or plug it into the ICETree node to update at every frame.]]></description>
+		<nodes>
+			<node type="SetOneDataNode" index="0">
+				<param name="reference" type="31" value="Self.Color"></param>
+				<param name="source.source_red" type="4" value="0.000000"></param>
+				<param name="source.source_green" type="4" value="0.000000"></param>
+				<param name="source.source_blue" type="4" value="1.000000"></param>
+				<param name="source.source_alpha" type="4" value="1.000000"></param>
+				<param_ext name="reference" type="31" value="Self.Color"></param_ext>
+				<portdef name="source" type="512" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">187</prop>
+					<prop name="posy">211</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="source" username="Color" basename="Color" portlabel="Color" exposetype="single">
+				<description><![CDATA[Sets the particle's color values.]]></description>
+			</port>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The particle's Color attribute. Click the Explorer button to open up an explorer and select a different particle attribute.]]></description>
+			</port>
+			<port index="0" portname="value" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Color" min="0" max="0"> </item>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</embedded_3>
+	<embedded_4 name="Set Particle Scale" tasks="Particles/Setters" formatversion="1.4" compoundversion="1.0" constructionmode="Modeling" backgroundcolor="12228200">
+	<description><![CDATA[This compound lets you set the particle's scale, using the particle's Scale attribute as a reference. Plug its Execute output into the Execute on Emit port of an Emit compound to set this value once, or plug it into the ICETree node to update at every frame.]]></description>
+		<nodes>
+			<node type="SetOneDataNode" index="0">
+				<param name="reference" type="31" value="Self.Scale"></param>
+				<param name="source.source_x" type="4" value="1.000000"></param>
+				<param name="source.source_y" type="4" value="1.000000"></param>
+				<param name="source.source_z" type="4" value="1.000000"></param>
+				<param_ext name="reference" type="31" value="Self.Scale"></param_ext>
+				<portdef name="source" type="16" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">187</prop>
+					<prop name="posy">211</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="source" username="Scale" basename="Scale" portlabel="Scale" exposetype="single">
+				<description><![CDATA[Sets the particle's scale value in its local XYZ coordinates.]]></description>
+			</port>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The particle's Scale attribute. Click the Explorer button to open up an explorer and select a different particle attribute.]]></description>
+			</port>
+			<port index="0" portname="value" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Scale" min="0" max="0"> </item>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</embedded_4>
+	<embedded_5 name="Randomize Color" category="Color" tasks="Particles/Modifiers" author="Softimage" formatversion="1.4" compoundversion="1.0" versiontag="First version" constructionmode="Current" backgroundcolor="6732954">
+	<description><![CDATA[This compound adds a random value to specific channels of the particle color so that each particle uses a different color from the range you set. You set a mean value around which you determine the range of variance of color values. Plug this compound's Random Color output into any Color port, such as that of the Emit compound.]]></description>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="Self.ID"></param>
+				<param_ext name="reference" type="31" value="Self.ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1199</prop>
+					<prop name="posy">-748</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+				<comment type="node" state="minimized" wordwrap="false" autoresize="false" background="0" background_alpha="0.000000" title="14876671" title_text="0" offsetx="-76" offsety="-114" sizex="201" sizey="58"><![CDATA[We feed in the ID of each Particle as the inpput ID of the Random Value node. This Allows us to have a different Random Value for each Point.]]></comment>
+			</node>
+			<node type="RandomValueNode" index="1">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-590</prop>
+					<prop name="posy">-496</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="2">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue.meanvalue_red" type="4" value="0.000000"></param>
+				<param name="meanvalue.meanvalue_green" type="4" value="0.000000"></param>
+				<param name="meanvalue.meanvalue_blue" type="4" value="0.000000"></param>
+				<param name="meanvalue.meanvalue_alpha" type="4" value="1.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="512" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-595</prop>
+					<prop name="posy">-916</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="3">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-581</prop>
+					<prop name="posy">-305</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="4">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-586</prop>
+					<prop name="posy">-705</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="5">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-592</prop>
+					<prop name="posy">532</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="6">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-597</prop>
+					<prop name="posy">98</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="7">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-594</prop>
+					<prop name="posy">316</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RandomValueNode" index="8">
+				<param name="distributiontype" type="3" value="0"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="id" type="3" value="0"></param>
+				<param name="meanvalue" type="4" value="0.000000"></param>
+				<param name="variance" type="4" value="0.000000"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="meanvalue" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="variance" type="4" structure="1" group="0" instance="0" port="4"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-597</prop>
+					<prop name="posy">-94</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="HLSAToColorNode" index="9">
+				<param name="hue" type="4" value="0.000000"></param>
+				<param name="lightness" type="4" value="0.000000"></param>
+				<param name="saturation" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="hue" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="lightness" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="saturation" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-424</prop>
+					<prop name="posy">98</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToRGBANode" index="10">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-748</prop>
+					<prop name="posy">-494</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SelectCaseNode" index="11">
+				<param name="condition" type="3" value="0"></param>
+				<param name="case0.case0_red" type="4" value="0.000000"></param>
+				<param name="case0.case0_green" type="4" value="0.000000"></param>
+				<param name="case0.case0_blue" type="4" value="0.000000"></param>
+				<param name="case0.case0_alpha" type="4" value="1.000000"></param>
+				<param name="case1.case1_red" type="4" value="0.000000"></param>
+				<param name="case1.case1_green" type="4" value="0.000000"></param>
+				<param name="case1.case1_blue" type="4" value="0.000000"></param>
+				<param name="case1.case1_alpha" type="4" value="1.000000"></param>
+				<param name="case2.case2_red" type="4" value="0.000000"></param>
+				<param name="case2.case2_green" type="4" value="0.000000"></param>
+				<param name="case2.case2_blue" type="4" value="0.000000"></param>
+				<param name="case2.case2_alpha" type="4" value="1.000000"></param>
+				<param name="case3.case3_red" type="4" value="0.000000"></param>
+				<param name="case3.case3_green" type="4" value="0.000000"></param>
+				<param name="case3.case3_blue" type="4" value="0.000000"></param>
+				<param name="case3.case3_alpha" type="4" value="1.000000"></param>
+				<param name="case4.case4_red" type="4" value="0.000000"></param>
+				<param name="case4.case4_green" type="4" value="0.000000"></param>
+				<param name="case4.case4_blue" type="4" value="0.000000"></param>
+				<param name="case4.case4_alpha" type="4" value="1.000000"></param>
+				<param name="case5.case5_red" type="4" value="0.000000"></param>
+				<param name="case5.case5_green" type="4" value="0.000000"></param>
+				<param name="case5.case5_blue" type="4" value="0.000000"></param>
+				<param name="case5.case5_alpha" type="4" value="1.000000"></param>
+				<param name="case6.case6_red" type="4" value="0.000000"></param>
+				<param name="case6.case6_green" type="4" value="0.000000"></param>
+				<param name="case6.case6_blue" type="4" value="0.000000"></param>
+				<param name="case6.case6_alpha" type="4" value="1.000000"></param>
+				<param name="case7.case7_red" type="4" value="0.000000"></param>
+				<param name="case7.case7_green" type="4" value="0.000000"></param>
+				<param name="case7.case7_blue" type="4" value="0.000000"></param>
+				<param name="case7.case7_alpha" type="4" value="1.000000"></param>
+				<param name="default.default_red" type="4" value="0.000000"></param>
+				<param name="default.default_green" type="4" value="0.000000"></param>
+				<param name="default.default_blue" type="4" value="0.000000"></param>
+				<param name="default.default_alpha" type="4" value="1.000000"></param>
+				<portdef name="condition" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="case0" type="512" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="case1" type="512" structure="1" group="1" instance="1" port="0"></portdef>
+				<portdef name="case2" type="512" structure="1" group="1" instance="2" port="0"></portdef>
+				<portdef name="case3" type="512" structure="1" group="1" instance="3" port="0"></portdef>
+				<portdef name="case4" type="512" structure="1" group="1" instance="4" port="0"></portdef>
+				<portdef name="case5" type="512" structure="1" group="1" instance="5" port="0"></portdef>
+				<portdef name="case6" type="512" structure="1" group="1" instance="6" port="0"></portdef>
+				<portdef name="case7" type="512" structure="1" group="1" instance="7" port="0"></portdef>
+				<portdef name="default" type="512" structure="1" group="2" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">272</prop>
+					<prop name="posy">-396</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+				<comment type="node" state="minimized" wordwrap="false" autoresize="false" background="0" background_alpha="0.000000" title="14876671" title_text="0" offsetx="10" offsety="-65" sizex="174" sizey="58"><![CDATA[Chose which Color Channel we're Randomizing]]></comment>
+			</node>
+			<node type="ColorToRGBANode" index="12">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-745</prop>
+					<prop name="posy">-703</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="13">
+				<param name="in" type="3" value="12345"></param>
+				<portdef name="in" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1238</prop>
+					<prop name="posy">-607</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+				<comment type="node" state="minimized" wordwrap="false" autoresize="false" background="0" background_alpha="0.000000" title="14876671" title_text="0" offsetx="0" offsety="-28" sizex="51" sizey="19"><![CDATA[Seed]]></comment>
+			</node>
+			<node type="HLSAToColorNode" index="14">
+				<param name="hue" type="4" value="0.000000"></param>
+				<param name="lightness" type="4" value="0.000000"></param>
+				<param name="saturation" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="hue" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="lightness" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="saturation" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-421</prop>
+					<prop name="posy">316</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToRGBANode" index="15">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-739</prop>
+					<prop name="posy">-305</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RGBAToColorNode" index="16">
+				<param name="red" type="4" value="0.000000"></param>
+				<param name="green" type="4" value="0.000000"></param>
+				<param name="blue" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="red" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="green" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blue" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-99</prop>
+					<prop name="posy">-502</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AbsoluteValueNode" index="17">
+				<param name="value" type="4" value="0.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-410</prop>
+					<prop name="posy">-306</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddNode" index="18">
+				<param name="value1" type="4" value="0.000000"></param>
+				<param name="value2" type="4" value="0.000000"></param>
+				<param name="value3" type="4" value="0.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<portdef name="value3" type="4" structure="1" group="0" instance="2" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-223</prop>
+					<prop name="posy">-444</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RGBAToColorNode" index="19">
+				<param name="red" type="4" value="0.000000"></param>
+				<param name="green" type="4" value="0.000000"></param>
+				<param name="blue" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="red" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="green" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blue" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-420</prop>
+					<prop name="posy">532</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RGBAToColorNode" index="20">
+				<param name="red" type="4" value="0.000000"></param>
+				<param name="green" type="4" value="0.000000"></param>
+				<param name="blue" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="red" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="green" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blue" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-104</prop>
+					<prop name="posy">-704</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="HLSAToColorNode" index="21">
+				<param name="hue" type="4" value="0.000000"></param>
+				<param name="lightness" type="4" value="0.000000"></param>
+				<param name="saturation" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="0.000000"></param>
+				<portdef name="hue" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="lightness" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="saturation" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-424</prop>
+					<prop name="posy">-94</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SubtractNode" index="22">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-237</prop>
+					<prop name="posy">-270</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="RGBAToColorNode" index="23">
+				<param name="red" type="4" value="0.000000"></param>
+				<param name="green" type="4" value="0.000000"></param>
+				<param name="blue" type="4" value="0.000000"></param>
+				<param name="alpha" type="4" value="1.000000"></param>
+				<portdef name="red" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="green" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="blue" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="alpha" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-92</prop>
+					<prop name="posy">-315</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="24">
+				<param name="in" type="4" value="0.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1226</prop>
+					<prop name="posy">-331</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+				<comment type="node" state="minimized" wordwrap="false" autoresize="false" background="0" background_alpha="0.000000" title="14876671" title_text="0" offsetx="-2" offsety="-30" sizex="51" sizey="19"><![CDATA[Variance]]></comment>
+			</node>
+			<node type="SubtractNode" index="25">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-253</prop>
+					<prop name="posy">-489</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="26">
+				<param name="in" type="11" value="false"></param>
+				<portdef name="in" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1238</prop>
+					<prop name="posy">-514</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+				<comment type="node" state="minimized" wordwrap="false" autoresize="false" background="0" background_alpha="0.000000" title="14876671" title_text="0" offsetx="-3" offsety="-27" sizex="65" sizey="19"><![CDATA[Time Varying]]></comment>
+			</node>
+			<node type="ColorToHLSANode" index="27">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-754</prop>
+					<prop name="posy">98</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SubtractNode" index="28">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-235</prop>
+					<prop name="posy">-626</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AbsoluteValueNode" index="29">
+				<param name="value" type="4" value="0.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-412</prop>
+					<prop name="posy">-702</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToHLSANode" index="30">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-751</prop>
+					<prop name="posy">316</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AbsoluteValueNode" index="31">
+				<param name="value" type="4" value="0.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-419</prop>
+					<prop name="posy">-493</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SubtractNode" index="32">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-233</prop>
+					<prop name="posy">-665</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SubtractNode" index="33">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-238</prop>
+					<prop name="posy">-312</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddNode" index="34">
+				<param name="value1" type="4" value="0.000000"></param>
+				<param name="value2" type="4" value="0.000000"></param>
+				<param name="value3" type="4" value="0.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<portdef name="value3" type="4" structure="1" group="0" instance="2" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-207</prop>
+					<prop name="posy">-701</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SubtractNode" index="35">
+				<param name="first" type="4" value="0.000000"></param>
+				<param name="second" type="4" value="0.000000"></param>
+				<portdef name="first" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-251</prop>
+					<prop name="posy">-408</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToHLSANode" index="36">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-757</prop>
+					<prop name="posy">-92</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorNode" index="37">
+				<param name="value.value_red" type="4" value="1.000000"></param>
+				<param name="value.value_green" type="4" value="1.000000"></param>
+				<param name="value.value_blue" type="4" value="1.000000"></param>
+				<param name="value.value_alpha" type="4" value="1.000000"></param>
+				<portdef name="value" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1271</prop>
+					<prop name="posy">-427</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddNode" index="38">
+				<param name="value1" type="4" value="0.000000"></param>
+				<param name="value2" type="4" value="0.000000"></param>
+				<param name="value3" type="4" value="0.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<portdef name="value3" type="4" structure="1" group="0" instance="2" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-211</prop>
+					<prop name="posy">-227</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ColorToRGBANode" index="39">
+				<param name="color.color_red" type="4" value="0.000000"></param>
+				<param name="color.color_green" type="4" value="0.000000"></param>
+				<param name="color.color_blue" type="4" value="0.000000"></param>
+				<param name="color.color_alpha" type="4" value="1.000000"></param>
+				<portdef name="color" type="512" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-750</prop>
+					<prop name="posy">532</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="0" background_alpha="0.100000" title="12500670" title_text="0" offsetx="-783" offsety="-949" sizex="885" sizey="180"><![CDATA[RED, GREEN AND BLUE]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="65023" background_alpha="0.463000" title="65535" title_text="0" offsetx="-781" offsety="280" sizex="538" sizey="189"><![CDATA[SATURATION]]></comment>
+			<comment type="node" state="minimized" wordwrap="false" autoresize="false" background="0" background_alpha="0.000000" title="14876671" title_text="0" offsetx="155" offsety="-708" sizex="197" sizey="435"><![CDATA[For Red, Green and Blue individual modes, we only add Color. For example, if we're in Red and we augment the Variance, it doesn't make sense to have some Colors become more red while others become more turquoise (less red, therefore more of the other Colors).]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="13816530" background_alpha="0.113000" title="14145495" title_text="0" offsetx="-784" offsety="71" sizex="538" sizey="174"><![CDATA[LIGHTNESS]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="255" background_alpha="0.269000" title="14876671" title_text="255" offsetx="-779" offsety="-737" sizex="886" sizey="179"><![CDATA[RED]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="16711680" background_alpha="0.250000" title="16711680" title_text="16777215" offsetx="-783" offsety="-339" sizex="890" sizey="184"><![CDATA[BLUE]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="8158332" background_alpha="0.100000" title="14606046" title_text="0" offsetx="-775" offsety="497" sizex="535" sizey="190"><![CDATA[ALPHA]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="65280" background_alpha="0.250000" title="45826" title_text="16777215" offsetx="-779" offsety="-531" sizex="888" sizey="177"><![CDATA[GREEN]]></comment>
+			<comment type="group" state="maximized" wordwrap="false" autoresize="false" background="0" background_alpha="0.213000" title="10921638" title_text="0" offsetx="-784" offsety="-125" sizex="534" sizey="184"><![CDATA[HUE]]></comment>
+		</nodes>
+		<exposed_ports>
+			<port index="11" portname="result" username="Random_Color" basename="Random Color" portlabel="Random Color" exposetype="single"> </port>
+			<port index="11" portname="condition" username="Randomized_Channel" basename="Randomized Channel" portlabel="Randomized Channel" exposetype="single">
+				<description><![CDATA[The color channels you can choose from to randomize: RGB, Red, Green, Blue, Hue, Lightness Saturation, or Alpha.]]></description>
+			</port>
+			<port index="13" portname="in" username="Seed" basename="Seed" portlabel="Seed" exposetype="single">
+				<description><![CDATA[This number is used as the basis for the randomization of the particle parameters. Change the seed value to get a different random generation of values.]]></description>
+			</port>
+			<port index="24" portname="in" username="Variance" basename="Variance" portlabel="Variance" exposetype="single">
+				<description><![CDATA[The amount of randomness calculated around the Mean Value.]]></description>
+			</port>
+			<port index="26" portname="in" username="Animated" basename="Animated" portlabel="Animated" exposetype="single">
+				<description><![CDATA[Toggles the animation of the randomness; that is, whether it varies over time or not.]]></description>
+			</port>
+			<port index="37" portname="value" username="Mean_Value" basename="Mean Value" portlabel="Mean Value" exposetype="single">
+				<description><![CDATA[The base value used to calculate the range of random variation on either side of it.]]></description>
+			</port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="value" to_node="31" to_port="value"> </cnx>
+			<cnx from_node="2" from_port="value" to_node="11" to_port="case0"> </cnx>
+			<cnx from_node="3" from_port="value" to_node="17" to_port="value"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="29" to_port="value"> </cnx>
+			<cnx from_node="5" from_port="value" to_node="19" to_port="alpha"> </cnx>
+			<cnx from_node="6" from_port="value" to_node="9" to_port="lightness"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="1" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="2" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="3" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="4" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="5" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="6" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="7" to_port="id"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="8" to_port="id"> </cnx>
+			<cnx from_node="9" from_port="color" to_node="11" to_port="case5"> </cnx>
+			<cnx from_node="10" from_port="red" to_node="25" to_port="first"> </cnx>
+			<cnx from_node="10" from_port="green" to_node="18" to_port="value1"> </cnx>
+			<cnx from_node="10" from_port="blue" to_node="35" to_port="first"> </cnx>
+			<cnx from_node="10" from_port="alpha" to_node="16" to_port="alpha"> </cnx>
+			<cnx from_node="12" from_port="red" to_node="34" to_port="value2"> </cnx>
+			<cnx from_node="12" from_port="green" to_node="32" to_port="first"> </cnx>
+			<cnx from_node="12" from_port="blue" to_node="28" to_port="first"> </cnx>
+			<cnx from_node="12" from_port="alpha" to_node="20" to_port="alpha"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="2" to_port="seed"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="5" to_port="seed"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="6" to_port="seed"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="7" to_port="seed"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="8" to_port="seed"> </cnx>
+			<cnx from_node="14" from_port="color" to_node="11" to_port="case6"> </cnx>
+			<cnx from_node="15" from_port="red" to_node="33" to_port="first"> </cnx>
+			<cnx from_node="15" from_port="green" to_node="22" to_port="first"> </cnx>
+			<cnx from_node="15" from_port="blue" to_node="38" to_port="value2"> </cnx>
+			<cnx from_node="15" from_port="alpha" to_node="23" to_port="alpha"> </cnx>
+			<cnx from_node="16" from_port="color" to_node="11" to_port="case2"> </cnx>
+			<cnx from_node="17" from_port="result" to_node="33" to_port="second"> </cnx>
+			<cnx from_node="17" from_port="result" to_node="22" to_port="second"> </cnx>
+			<cnx from_node="17" from_port="result" to_node="38" to_port="value1"> </cnx>
+			<cnx from_node="18" from_port="result" to_node="16" to_port="green"> </cnx>
+			<cnx from_node="19" from_port="color" to_node="11" to_port="case7"> </cnx>
+			<cnx from_node="20" from_port="color" to_node="11" to_port="case1"> </cnx>
+			<cnx from_node="21" from_port="color" to_node="11" to_port="case4"> </cnx>
+			<cnx from_node="22" from_port="result" to_node="23" to_port="green"> </cnx>
+			<cnx from_node="23" from_port="color" to_node="11" to_port="case3"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="1" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="2" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="3" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="4" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="5" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="6" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="7" to_port="variance"> </cnx>
+			<cnx from_node="24" from_port="out" to_node="8" to_port="variance"> </cnx>
+			<cnx from_node="25" from_port="result" to_node="16" to_port="red"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="1" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="2" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="3" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="4" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="5" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="6" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="7" to_port="timevarying"> </cnx>
+			<cnx from_node="26" from_port="out" to_node="8" to_port="timevarying"> </cnx>
+			<cnx from_node="27" from_port="lightness" to_node="6" to_port="meanvalue"> </cnx>
+			<cnx from_node="27" from_port="hue" to_node="9" to_port="hue"> </cnx>
+			<cnx from_node="27" from_port="saturation" to_node="9" to_port="saturation"> </cnx>
+			<cnx from_node="27" from_port="alpha" to_node="9" to_port="alpha"> </cnx>
+			<cnx from_node="28" from_port="result" to_node="20" to_port="blue"> </cnx>
+			<cnx from_node="29" from_port="result" to_node="34" to_port="value1"> </cnx>
+			<cnx from_node="29" from_port="result" to_node="32" to_port="second"> </cnx>
+			<cnx from_node="29" from_port="result" to_node="28" to_port="second"> </cnx>
+			<cnx from_node="30" from_port="hue" to_node="14" to_port="hue"> </cnx>
+			<cnx from_node="30" from_port="lightness" to_node="14" to_port="lightness"> </cnx>
+			<cnx from_node="30" from_port="saturation" to_node="7" to_port="meanvalue"> </cnx>
+			<cnx from_node="30" from_port="alpha" to_node="14" to_port="alpha"> </cnx>
+			<cnx from_node="31" from_port="result" to_node="25" to_port="second"> </cnx>
+			<cnx from_node="31" from_port="result" to_node="18" to_port="value2"> </cnx>
+			<cnx from_node="31" from_port="result" to_node="35" to_port="second"> </cnx>
+			<cnx from_node="32" from_port="result" to_node="20" to_port="green"> </cnx>
+			<cnx from_node="33" from_port="result" to_node="23" to_port="red"> </cnx>
+			<cnx from_node="34" from_port="result" to_node="20" to_port="red"> </cnx>
+			<cnx from_node="35" from_port="result" to_node="16" to_port="blue"> </cnx>
+			<cnx from_node="36" from_port="hue" to_node="8" to_port="meanvalue"> </cnx>
+			<cnx from_node="36" from_port="lightness" to_node="21" to_port="lightness"> </cnx>
+			<cnx from_node="36" from_port="saturation" to_node="21" to_port="saturation"> </cnx>
+			<cnx from_node="36" from_port="alpha" to_node="21" to_port="alpha"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="2" to_port="meanvalue"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="39" to_port="color"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="27" to_port="color"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="10" to_port="color"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="12" to_port="color"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="30" to_port="color"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="15" to_port="color"> </cnx>
+			<cnx from_node="37" from_port="result" to_node="36" to_port="color"> </cnx>
+			<cnx from_node="38" from_port="result" to_node="23" to_port="blue"> </cnx>
+			<cnx from_node="39" from_port="alpha" to_node="5" to_port="meanvalue"> </cnx>
+			<cnx from_node="39" from_port="red" to_node="19" to_port="red"> </cnx>
+			<cnx from_node="39" from_port="green" to_node="19" to_port="green"> </cnx>
+			<cnx from_node="39" from_port="blue" to_node="19" to_port="blue"> </cnx>
+			<cnx from_node="7" from_port="value" to_node="14" to_port="saturation"> </cnx>
+			<cnx from_node="8" from_port="value" to_node="21" to_port="hue"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Randomized_Channel" min="0" max="0">
+				<enum value="0"><![CDATA[RGB]]></enum>
+				<enum value="1"><![CDATA[Red]]></enum>
+				<enum value="2"><![CDATA[Green]]></enum>
+				<enum value="3"><![CDATA[Blue]]></enum>
+				<enum value="4"><![CDATA[Hue]]></enum>
+				<enum value="5"><![CDATA[Lightness]]></enum>
+				<enum value="6"><![CDATA[Saturation]]></enum>
+				<enum value="7"><![CDATA[Alpha]]></enum>
+			</item>
+			<item type="input" name="Seed"> </item>
+			<item type="input" name="Animated"> </item>
+			<item type="input" name="Mean_Value"> </item>
+			<item type="input" name="Variance" min="0" max="1"> </item>
+			<item type="output" name="Random_Color"> </item>
+		</layout>
+	</embedded_5>
+	<embedded_6 name="Get Particle Color" tasks="Particles/Getters" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="12228200">
+	<description><![CDATA[This compound gets the particle's current color data as set by its Color attribute. You can output this Color data.]]></description>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="Self.Color"></param>
+				<param_ext name="reference" type="31" value="Self.Color"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1779</prop>
+					<prop name="posy">2331</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The particle's Color attribute. Click the Explorer button to open up an explorer and select a different particle attribute.]]></description>
+			</port>
+			<port index="0" portname="value" username="Color" basename="Color" portlabel="Color" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Color"> </item>
+		</layout>
+	</embedded_6>
+	<embedded_7 name="Get Point Position" tasks="Deformation/Getters" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="12228200">
+	<description><![CDATA[Returns the position of each point on the ""self"" object.]]></description>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="Self.PointPosition"></param>
+				<param_ext name="reference" type="31" value="Self.PointPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">559</prop>
+					<prop name="posy">-368</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="value" username="Value" basename="Value" portlabel="Value" exposetype="single"> </port>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The attribute to get, in this case ""Self.PointPosition"".]]></description>
+			</port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Value"> </item>
+		</layout>
+	</embedded_7>
+	<embedded_8 name="Get Particle Orientation" tasks="Particles/Getters" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="12228200">
+	<description><![CDATA[This compound gets the particle's current rotation data as set by its Orientation attribute. You can output the Orientation as rotation data.]]></description>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="Self.Orientation"></param>
+				<param_ext name="reference" type="31" value="Self.Orientation"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1779</prop>
+					<prop name="posy">2331</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The particle's Orientation attribute. Click the Explorer button to open up an explorer and select a different particle attribute.]]></description>
+			</port>
+			<port index="0" portname="value" username="Orientation" basename="Orientation" portlabel="Orientation" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Orientation"> </item>
+		</layout>
+	</embedded_8>
+	<embedded_9 name="Set Particle Orientation" tasks="Particles/Setters" formatversion="1.4" compoundversion="1.0" constructionmode="Modeling" backgroundcolor="12228200">
+	<description><![CDATA[This compound lets you set the particle's orientation, using the particle's Orientation attribute as a reference. Plug its Execute output into the Execute on Emit port of an Emit compound to set this value once, or plug it into the ICETree node to update at every frame.]]></description>
+		<nodes>
+			<node type="SetOneDataNode" index="0">
+				<param name="reference" type="31" value="Self.Orientation"></param>
+				<param name="source.source_x" type="4" value="1.000000"></param>
+				<param name="source.source_y" type="4" value="0.000000"></param>
+				<param name="source.source_z" type="4" value="0.000000"></param>
+				<param name="source.source_angle" type="4" value="0.000000"></param>
+				<param_ext name="reference" type="31" value="Self.Orientation"></param_ext>
+				<portdef name="source" type="16384" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">187</prop>
+					<prop name="posy">211</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="source" username="Orientation" basename="Orientation" portlabel="Orientation" exposetype="single">
+				<description><![CDATA[Sets the particle's Angle value in degrees around its local XYZ axes.]]></description>
+			</port>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The particle's Orientation attribute. Click the Explorer button to open up an explorer and select a different particle attribute.]]></description>
+			</port>
+			<port index="0" portname="value" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Orientation" min="0" max="0"> </item>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</embedded_9>
+	<embedded_10 name="Set Point Position" tasks="Deformation/Setters" formatversion="1.4" compoundversion="1.0" constructionmode="Modeling" backgroundcolor="12228200">
+	<description><![CDATA[Sets the point positions on the ""self' object.]]></description>
+		<nodes>
+			<node type="SetOneDataNode" index="0">
+				<param name="reference" type="31" value="Self.PointPosition"></param>
+				<param name="source.source_x" type="4" value="0.000000"></param>
+				<param name="source.source_y" type="4" value="0.000000"></param>
+				<param name="source.source_z" type="4" value="0.000000"></param>
+				<param_ext name="reference" type="31" value="Self.PointPosition"></param_ext>
+				<portdef name="source" type="16" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">187</prop>
+					<prop name="posy">211</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="source" username="Position" basename="Position" portlabel="Position" exposetype="single">
+				<description><![CDATA[Connect a data set containing the new point positions to this port.]]></description>
+			</port>
+			<port index="0" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single">
+				<description><![CDATA[The attribute to set, in this case ""Self.PointPosition"".]]></description>
+			</port>
+			<port index="0" portname="value" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+		</connections>
+		<layout>
+			<item type="input" name="Position" min="0" max="0"> </item>
+			<item type="input" name="Reference"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</embedded_10>
+</xsi_file>

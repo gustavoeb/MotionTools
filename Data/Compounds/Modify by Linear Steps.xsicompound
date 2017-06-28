@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Modify by Linear Steps" tasks="Motion Tools/Modifiers" author="Gustavo E Boehs" url="http://gustavoeb.com.br/blog" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="12228200">
+	<description><![CDATA[This modifier enables you to transform properties along different axis in a linear or arbitrary f-curve fashion.]]></description>
+	<definition>
+		<nodes>
+			<node type="Modify Color" version="0.1" index="0">
+				<param name="Blend" type="4" value="1.000000"></param>
+				<param name="Color.Color_red" type="4" value="1.000000"></param>
+				<param name="Color.Color_green" type="4" value="1.000000"></param>
+				<param name="Color.Color_blue" type="4" value="1.000000"></param>
+				<param name="Color.Color_alpha" type="4" value="1.000000"></param>
+				<param name="Blend_Alpha" type="4" value="1.000000"></param>
+				<portdef name="Blend_Alpha" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Blend" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Color" type="512" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-118</prop>
+					<prop name="posy">386</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="1">
+				<param name="condition" type="11" value="false"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">37</prop>
+					<prop name="posy">386</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Modify Transform" version="0.5" index="2">
+				<param name="Blend" type="4" value="1.000000"></param>
+				<param name="Mode" type="3" value="0"></param>
+				<param name="Space" type="3" value="1"></param>
+				<param name="Additive" type="11" value="false"></param>
+				<param name="X" type="4" value="1.000000"></param>
+				<param name="Y" type="4" value="1.000000"></param>
+				<param name="Z" type="4" value="1.000000"></param>
+				<param name="Angle" type="4" value="180.000000"></param>
+				<portdef name="Mode" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Blend" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Z" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Y" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Additive" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="X" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Space" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Angle" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-148</prop>
+					<prop name="posy">64</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Linear Stepper" version="0.5" index="3">
+				<param name="Advanced" type="buffer">2 20 2 0 -1.79769E+308 1.79769E+308 3 0
+0 0.000000 0.000000 0.437053 0.003049 -0.333310 -0.002325 4 2
+0 1.000000 1.000000 0.000000 0.195428 0.000000 -0.345518 4 2
+</param>
+				<param name="Blend" type="4" value="1.000000"></param>
+				<param name="Axis" type="3" value="1"></param>
+				<param name="From" type="4" value="0.000000"></param>
+				<param name="To" type="4" value="1.000000"></param>
+				<param name="Begin_at" type="4" value="0.000000"></param>
+				<param name="End_at" type="4" value="1.000000"></param>
+				<portdef name="From" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="To" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Begin_at" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="End_at" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Axis" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Blend" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-315</prop>
+					<prop name="posy">-21</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ExecuteNode" index="4">
+				<portdef name="port1" type="4096" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="port2" type="4096" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">140</prop>
+					<prop name="posy">225</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="6">
+				<param name="condition" type="11" value="true"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">37</prop>
+					<prop name="posy">64</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="7">
+				<param name="in" type="4" value="0.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-308</prop>
+					<prop name="posy">293</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="8">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-308</prop>
+					<prop name="posy">200</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="Color" username="Color" basename="Color" portlabel="Color" exposetype="single"> </port>
+			<port index="1" portname="condition" username="Enable1" basename="Enable" portlabel="Enable1" exposetype="single"> </port>
+			<port index="2" portname="Mode" username="Mode" basename="Mode" portlabel="Mode" exposetype="single"> </port>
+			<port index="2" portname="X" username="X" basename="X" portlabel="X" exposetype="single"> </port>
+			<port index="2" portname="Y" username="Y" basename="Y" portlabel="Y" exposetype="single"> </port>
+			<port index="2" portname="Additive" username="Additive" basename="Additive" portlabel="Additive" exposetype="single"> </port>
+			<port index="2" portname="Space" username="Space" basename="Space" portlabel="Space" exposetype="single"> </port>
+			<port index="3" portname="Axis" username="Axis" basename="Axis" portlabel="Axis" exposetype="single"> </port>
+			<port index="3" portname="From" username="From" basename="From" portlabel="From" exposetype="single"> </port>
+			<port index="3" portname="To" username="To" basename="To" portlabel="To" exposetype="single"> </port>
+			<port index="3" portname="Begin_at" username="Begin_at" basename="Begin at" portlabel="Begin at" exposetype="single"> </port>
+			<port index="3" portname="End_at" username="End_at" basename="End at" portlabel="End at" exposetype="single"> </port>
+			<port index="3" portname="Advanced" username="Advanced" basename="Advanced" portlabel="Advanced" exposetype="single"> </port>
+			<port index="3" portname="Result" username="Modulate" basename="Modulate" portlabel="Modulate" exposetype="single"> </port>
+			<port index="3" portname="Blend" username="Blend" basename="Blend" portlabel="Blend" exposetype="single"> </port>
+			<port index="4" portname="execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="6" portname="condition" username="Enable" basename="Enable" portlabel="Enable" exposetype="single"> </port>
+			<port index="7" portname="in" username="Angle" basename="Angle" portlabel="Angle" exposetype="single"> </port>
+			<port index="8" portname="in" username="Z" basename="Z" portlabel="Z" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="result" to_node="4" to_port="port2"> </cnx>
+			<cnx from_node="2" from_port="Execute" to_node="6" to_port="iftrue"> </cnx>
+			<cnx from_node="0" from_port="Execute" to_node="1" to_port="iftrue"> </cnx>
+			<cnx from_node="3" from_port="Result" to_node="0" to_port="Blend_Alpha"> </cnx>
+			<cnx from_node="3" from_port="Result" to_node="0" to_port="Blend"> </cnx>
+			<cnx from_node="3" from_port="Result" to_node="2" to_port="Blend"> </cnx>
+			<cnx from_node="7" from_port="out" to_node="2" to_port="Angle"> </cnx>
+			<cnx from_node="8" from_port="out" to_node="2" to_port="Z"> </cnx>
+			<cnx from_node="6" from_port="result" to_node="4" to_port="port1"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Blend" min="0" max="1"> </item>
+			<group type="input" name="Affect" collapsed="false">
+				<item type="input" name="Axis" min="0" max="0">
+					<enum value="0"><![CDATA[Order of Creation]]></enum>
+					<enum value="1"><![CDATA[U]]></enum>
+					<enum value="2"><![CDATA[V]]></enum>
+					<enum value="3"><![CDATA[W]]></enum>
+				</item>
+				<item type="input" name="From" min="0" max="1"> </item>
+				<item type="input" name="To" min="0" max="1"> </item>
+			</group>
+			<group type="input" name="Transforms" collapsed="false">
+				<item type="input" name="Enable" min="0" max="0"> </item>
+				<item type="input" name="Mode" min="0" max="0">
+					<enum value="0"><![CDATA[Scale]]></enum>
+					<enum value="1"><![CDATA[Rotation]]></enum>
+					<enum value="2"><![CDATA[Translation]]></enum>
+				</item>
+				<item type="input" name="Space" min="0" max="0">
+					<enum value="0"><![CDATA[Global]]></enum>
+					<enum value="1"><![CDATA[Local]]></enum>
+				</item>
+				<item type="input" name="Additive" min="0" max="0"> </item>
+				<item type="input" name="X" min="0" max="0"> </item>
+				<item type="input" name="Y" min="0" max="0"> </item>
+				<item type="input" name="Z" min="0" max="0"> </item>
+				<item type="input" name="Angle" min="0" max="0"> </item>
+			</group>
+			<group type="input" name="Colors" collapsed="false">
+				<item type="input" name="Color" min="0" max="0"> </item>
+				<item type="input" name="Enable1" min="0" max="0"> </item>
+			</group>
+			<group type="input" name="Remmap Output" collapsed="false">
+				<item type="input" name="Begin_at" min="0" max="0"> </item>
+				<item type="input" name="End_at" min="0" max="0"> </item>
+				<item type="input" name="Advanced" min="0" max="0"> </item>
+			</group>
+			<item type="output" name="Execute"> </item>
+			<item type="output" name="Modulate" min="0" max="0"> </item>
+		</layout>
+	</definition>
+</xsi_file>

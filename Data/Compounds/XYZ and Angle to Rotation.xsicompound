@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="XYZ and Angle to Rotation" formatversion="1.4" compoundversion="1.0">
+	<definition>
+		<nodes>
+			<node type="PassThroughNode" index="0">
+				<param name="in" type="4" value="0.500000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-5337</prop>
+					<prop name="posy">9194</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="1">
+				<param name="in" type="4" value="0.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-5337</prop>
+					<prop name="posy">9101</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AxisAndAngleToRotationNode" index="2">
+				<param name="axis.axis_x" type="4" value="1.000000"></param>
+				<param name="axis.axis_y" type="4" value="0.000000"></param>
+				<param name="axis.axis_z" type="4" value="0.000000"></param>
+				<param name="angle" type="4" value="360.000000"></param>
+				<portdef name="axis" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="angle" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-4981</prop>
+					<prop name="posy">9085</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ScalarTo3DVectorNode" index="3">
+				<param name="x" type="4" value="0.000000"></param>
+				<param name="y" type="4" value="0.000000"></param>
+				<param name="z" type="4" value="0.000000"></param>
+				<portdef name="x" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="y" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="z" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-5177</prop>
+					<prop name="posy">9085</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="4">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-5337</prop>
+					<prop name="posy">9008</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="in" username="z" basename="z" portlabel="z" exposetype="single"> </port>
+			<port index="1" portname="in" username="y" basename="y" portlabel="y" exposetype="single"> </port>
+			<port index="2" portname="angle" username="angle" basename="angle" portlabel="angle" exposetype="single"> </port>
+			<port index="2" portname="rotation" username="rotation" basename="rotation" portlabel="rotation" exposetype="single"> </port>
+			<port index="4" portname="in" username="x" basename="x" portlabel="x" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="0" from_port="out" to_node="3" to_port="z"> </cnx>
+			<cnx from_node="1" from_port="out" to_node="3" to_port="y"> </cnx>
+			<cnx from_node="3" from_port="vector" to_node="2" to_port="axis"> </cnx>
+			<cnx from_node="4" from_port="out" to_node="3" to_port="x"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="x" min="0" max="0"> </item>
+			<item type="input" name="y" min="0" max="0"> </item>
+			<item type="input" name="z" min="0" max="0"> </item>
+			<item type="input" name="angle"> </item>
+			<item type="output" name="rotation"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

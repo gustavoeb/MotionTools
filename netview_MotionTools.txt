@@ -1,0 +1,1 @@
+Motion Tools is a set of ICE Compounds and Python Scripts that aims at aiding the Motion Graphics workflow inside Softimage.

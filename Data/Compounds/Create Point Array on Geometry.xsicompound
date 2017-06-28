@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Create Point Array on Geometry" tasks="Motion Tools/Generators" author="Gustavo E Boehs" url="http://www.gustavoeb.com.br/blog" formatversion="1.4" compoundversion="1.0" constructionmode="Modeling" backgroundcolor="12632256">
+	<description><![CDATA[Create Point Array on Geometry will create points based on the geometry’s elements (Vertex, Edge, Polygon), surface, and volume. It may adapts points scale and orientation according to the shape.]]></description>
+	<definition>
+		<nodes>
+			<node type="Create Points at Elements Position" version="0.1" index="0">
+				<param name="Mode" type="3" value="0"></param>
+				<param name="Align_to_Geometry" type="11" value="true"></param>
+				<param name="Scale_to_Elements_Size" type="11" value="false"></param>
+				<portdef name="Align_to_Geometry" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Scale_to_Elements_Size" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Mode" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1556</prop>
+					<prop name="posy">-4420</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Create grid filtered by object" version="1.2" index="1">
+				<param name="Resolution" type="4" value="0.500000"></param>
+				<param name="Align_to_Geometry" type="11" value="false"></param>
+				<param name="Scale_to_Fit" type="11" value="false"></param>
+				<param name="X" type="4" value="1.000000"></param>
+				<param name="Y" type="4" value="1.000000"></param>
+				<param name="Z" type="4" value="1.000000"></param>
+				<portdef name="Align_to_Geometry" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Scale_to_Fit" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Resolution" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="X" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Y" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Z" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1534</prop>
+					<prop name="posy">-3980</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Create Random Points at Surface" version="0.1" index="2">
+				<param name="Resolution" type="4" value="0.000000"></param>
+				<param name="Align_to_Geo" type="11" value="false"></param>
+				<param name="Scale_to_Fit" type="11" value="false"></param>
+				<portdef name="Align_to_Geo" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Scale_to_Fit" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Resolution" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1548</prop>
+					<prop name="posy">-4299</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Assign Normalized ID" version="1.0" index="3">
+				<datablob category="ui_infos">
+					<prop name="posx">-1266</prop>
+					<prop name="posy">-3886</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Create Random Points at Volume" version="0.1" index="4">
+				<param name="Resolution" type="4" value="0.000000"></param>
+				<param name="Align_to_Geo" type="11" value="false"></param>
+				<param name="Scale_to_Fit" type="11" value="false"></param>
+				<portdef name="Align_to_Geo" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Resolution" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Scale_to_Fit" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1556</prop>
+					<prop name="posy">-4145</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="5">
+				<param name="reference" type="31" value=""></param>
+				<param_ext name="reference" type="31" value=""></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2062</prop>
+					<prop name="posy">-4324</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="6">
+				<param name="condition" type="11" value="false"></param>
+				<param name="iftrue" type="3" value="0"></param>
+				<param name="iffalse" type="3" value="0"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="2" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1369</prop>
+					<prop name="posy">-4622</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ExecuteNode" index="8">
+				<portdef name="port1" type="4096" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="port2" type="4096" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1019</prop>
+					<prop name="posy">-4097</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IntegerNode" index="9">
+				<param name="value" type="3" value="6"></param>
+				<portdef name="value" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1804</prop>
+					<prop name="posy">-4684</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="CompareNode" index="10">
+				<param name="type" type="3" value="3"></param>
+				<param name="epsilon" type="5" value="0.001000"></param>
+				<param name="first" type="3" value="0"></param>
+				<param name="second" type="3" value="2"></param>
+				<portdef name="first" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1649</prop>
+					<prop name="posy">-4684</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SubtractNode" index="11">
+				<param name="first" type="3" value="0"></param>
+				<param name="second" type="3" value="2"></param>
+				<portdef name="first" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1687</prop>
+					<prop name="posy">-4543</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="12">
+				<param name="in" type="11" value="false"></param>
+				<portdef name="in" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1716</prop>
+					<prop name="posy">-4293</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="13">
+				<param name="in" type="4" value="1.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1876</prop>
+					<prop name="posy">-4200</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="14">
+				<param name="in" type="11" value="true"></param>
+				<portdef name="in" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1823</prop>
+					<prop name="posy">-4461</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SelectCaseNode" index="15">
+				<param name="condition" type="3" value="0"></param>
+				<portdef name="condition" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="case0" type="4096" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="case1" type="4096" structure="1" group="1" instance="1" port="0"></portdef>
+				<portdef name="case2" type="4096" structure="1" group="1" instance="2" port="0"></portdef>
+				<portdef name="case3" type="4096" structure="1" group="1" instance="3" port="0"></portdef>
+				<portdef name="case4" type="4096" structure="1" group="1" instance="4" port="0"></portdef>
+				<portdef name="default" type="4096" structure="1" group="2" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1237</prop>
+					<prop name="posy">-4341</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="1" portname="X" username="X_Step_Mult" basename="X Step Mult" portlabel="X Step Mult" exposetype="single"> </port>
+			<port index="1" portname="Y" username="Y_Step_Mult" basename="Y Step Mult" portlabel="Y Step Mult" exposetype="single"> </port>
+			<port index="1" portname="Z" username="Z_Step_Mult" basename="Z Step Mult" portlabel="Z Step Mult" exposetype="single"> </port>
+			<port index="5" portname="inname" username="In_Name" basename="In Name" portlabel="In Name" exposetype="single"> </port>
+			<port index="5" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single"> </port>
+			<port index="8" portname="execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="9" portname="value" username="Mode" basename="Mode" portlabel="Mode" exposetype="single"> </port>
+			<port index="12" portname="in" username="Align_to_Geometry" basename="Align to Geometry" portlabel="Align to Geometry" exposetype="single"> </port>
+			<port index="13" portname="in" username="Resolution" basename="Resolution" portlabel="Resolution" exposetype="single">
+				<description><![CDATA[1 per SI unit]]></description>
+			</port>
+			<port index="14" portname="in" username="Smart_Scaling" basename="Smart Scaling" portlabel="Smart Scaling" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="0" from_port="Result" to_node="15" to_port="case0"> </cnx>
+			<cnx from_node="1" from_port="Execute" to_node="15" to_port="case4"> </cnx>
+			<cnx from_node="2" from_port="Add" to_node="15" to_port="case1"> </cnx>
+			<cnx from_node="15" from_port="result" to_node="8" to_port="port1"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="1" to_port="Resolution"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="2" to_port="Resolution"> </cnx>
+			<cnx from_node="13" from_port="out" to_node="4" to_port="Resolution"> </cnx>
+			<cnx from_node="14" from_port="out" to_node="0" to_port="Scale_to_Elements_Size"> </cnx>
+			<cnx from_node="14" from_port="out" to_node="1" to_port="Scale_to_Fit"> </cnx>
+			<cnx from_node="14" from_port="out" to_node="2" to_port="Scale_to_Fit"> </cnx>
+			<cnx from_node="14" from_port="out" to_node="4" to_port="Scale_to_Fit"> </cnx>
+			<cnx from_node="3" from_port="execute" to_node="8" to_port="port2"> </cnx>
+			<cnx from_node="4" from_port="Add" to_node="15" to_port="case3"> </cnx>
+			<cnx from_node="5" from_port="outname" to_node="0" to_port="In_Name"> </cnx>
+			<cnx from_node="5" from_port="outname" to_node="1" to_port="In_Name"> </cnx>
+			<cnx from_node="5" from_port="outname" to_node="2" to_port="In_Name"> </cnx>
+			<cnx from_node="5" from_port="outname" to_node="4" to_port="In_Name"> </cnx>
+			<cnx from_node="9" from_port="result" to_node="0" to_port="Mode"> </cnx>
+			<cnx from_node="9" from_port="result" to_node="10" to_port="first"> </cnx>
+			<cnx from_node="9" from_port="result" to_node="11" to_port="first"> </cnx>
+			<cnx from_node="10" from_port="result" to_node="6" to_port="condition"> </cnx>
+			<cnx from_node="11" from_port="result" to_node="6" to_port="iffalse"> </cnx>
+			<cnx from_node="12" from_port="out" to_node="0" to_port="Align_to_Geometry"> </cnx>
+			<cnx from_node="12" from_port="out" to_node="1" to_port="Align_to_Geometry"> </cnx>
+			<cnx from_node="12" from_port="out" to_node="2" to_port="Align_to_Geo"> </cnx>
+			<cnx from_node="6" from_port="result" to_node="15" to_port="condition"> </cnx>
+		</connections>
+		<layout>
+			<group type="input" name="Object" collapsed="false">
+				<item type="input" name="Reference" min="0" max="0"> </item>
+				<item type="input" name="In_Name" min="0" max="0"> </item>
+			</group>
+			<item type="input" name="Mode" min="0" max="0">
+				<enum value="0"><![CDATA[Vertex Element]]></enum>
+				<enum value="1"><![CDATA[Edge Element]]></enum>
+				<enum value="2"><![CDATA[Polygon Element]]></enum>
+				<enum value="3"><![CDATA[Surface (Randomly)]]></enum>
+				<enum value="5"><![CDATA[Volume (Randomly)]]></enum>
+				<enum value="6"><![CDATA[Volume (Voxel Grid)]]></enum>
+			</item>
+			<item type="input" name="Align_to_Geometry"> </item>
+			<item type="input" name="Smart_Scaling" min="0" max="0"> </item>
+			<group type="input" name="Surface and Volume Only" collapsed="false">
+				<item type="input" name="Resolution" min="0" max="5"> </item>
+			</group>
+			<group type="input" name="Voxels Grid Only" collapsed="false">
+				<item type="input" name="X_Step_Mult" min="0" max="1"> </item>
+				<item type="input" name="Y_Step_Mult" min="0" max="1"> </item>
+				<item type="input" name="Z_Step_Mult" min="0" max="1"> </item>
+			</group>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</definition>
+</xsi_file>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Add Scalars to 3d Vector" tasks="Math/Basic" author="Gustavo E Boehs" formatversion="1.4" compoundversion="1.0" constructionmode="Modeling" backgroundcolor="6732954">
+	<definition>
+		<nodes>
+			<node type="ScalarTo3DVectorNode" index="0">
+				<param name="x" type="4" value="0.000000"></param>
+				<param name="y" type="4" value="0.000000"></param>
+				<param name="z" type="4" value="0.000000"></param>
+				<portdef name="x" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="y" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="z" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1286</prop>
+					<prop name="posy">7026</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddNode" index="1">
+				<param name="value1" type="4" value="0.000000"></param>
+				<param name="value2" type="4" value="0.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1423</prop>
+					<prop name="posy">6878</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="2">
+				<param name="in" type="4" value="247.966003"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1583</prop>
+					<prop name="posy">6957</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddNode" index="3">
+				<param name="value1" type="4" value="0.000000"></param>
+				<param name="value2" type="4" value="0.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1423</prop>
+					<prop name="posy">7050</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="4">
+				<param name="in" type="4" value="183.050995"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1583</prop>
+					<prop name="posy">7050</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddNode" index="5">
+				<param name="value1" type="4" value="0.000000"></param>
+				<param name="value2" type="4" value="0.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1423</prop>
+					<prop name="posy">7175</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="6">
+				<param name="in" type="4" value="149.492004"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-1583</prop>
+					<prop name="posy">7175</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="3DVectorToScalarNode" index="7">
+				<param name="vector.vector_x" type="4" value="0.000000"></param>
+				<param name="vector.vector_y" type="4" value="0.000000"></param>
+				<param name="vector.vector_z" type="4" value="0.000000"></param>
+				<portdef name="vector" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1619</prop>
+					<prop name="posy">6832</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="vector" username="Vector" basename="Vector" portlabel="Vector" exposetype="single"> </port>
+			<port index="2" portname="in" username="Value2" basename="Value2" portlabel="Value2" exposetype="single"> </port>
+			<port index="4" portname="in" username="Value4" basename="Value4" portlabel="Value4" exposetype="single"> </port>
+			<port index="6" portname="in" username="Value3" basename="Value3" portlabel="Value3" exposetype="single"> </port>
+			<port index="7" portname="vector" username="Vector1" basename="Vector1" portlabel="Vector1" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="result" to_node="0" to_port="x"> </cnx>
+			<cnx from_node="2" from_port="out" to_node="1" to_port="value2"> </cnx>
+			<cnx from_node="3" from_port="result" to_node="0" to_port="y"> </cnx>
+			<cnx from_node="7" from_port="x" to_node="1" to_port="value1"> </cnx>
+			<cnx from_node="7" from_port="y" to_node="3" to_port="value1"> </cnx>
+			<cnx from_node="7" from_port="z" to_node="5" to_port="value1"> </cnx>
+			<cnx from_node="5" from_port="result" to_node="0" to_port="z"> </cnx>
+			<cnx from_node="4" from_port="out" to_node="3" to_port="value2"> </cnx>
+			<cnx from_node="6" from_port="out" to_node="5" to_port="value2"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Vector1"> </item>
+			<item type="input" name="Value2"> </item>
+			<item type="input" name="Value4"> </item>
+			<item type="input" name="Value3"> </item>
+			<item type="output" name="Vector"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

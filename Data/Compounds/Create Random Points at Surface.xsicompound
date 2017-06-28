@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Create Random Points at Surface" author="Gustavo E Boehs" url="http://www.gustavoeb.com.br/blog" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="6732954">
+	<definition>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value=""></param>
+				<param_ext name="reference" type="31" value=""></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2921</prop>
+					<prop name="posy">-3927</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="FCurveNode" index="1">
+				<param name="profile" type="buffer">2 20 2 -0.00989444 -1.79769E+308 1.79769E+308 3 0
+0 -0.016403 -0.009894 0.047297 0.353559 -0.010766 -0.080476 4 3
+0 9.978376 0.897315 0.328875 0.013127 -3.483005 -0.139025 5 2
+</param>
+				<param name="in" type="4" value="0.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2198</prop>
+					<prop name="posy">-3724</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="DirectionToRotationNode" index="2">
+				<param name="pointat.pointat_x" type="4" value="0.000000"></param>
+				<param name="pointat.pointat_y" type="4" value="1.000000"></param>
+				<param name="pointat.pointat_z" type="4" value="0.000000"></param>
+				<param name="upvector.upvector_x" type="4" value="0.000000"></param>
+				<param name="upvector.upvector_y" type="4" value="1.000000"></param>
+				<param name="upvector.upvector_z" type="4" value="0.000000"></param>
+				<portdef name="pointat" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="upvector" type="16" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2504</prop>
+					<prop name="posy">-3927</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="3">
+				<param name="condition" type="11" value="false"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1972</prop>
+					<prop name="posy">-3927</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MultiplyNode" index="4">
+				<param name="value1" type="4" value="1.000000"></param>
+				<param name="value2" type="4" value="1000.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2211</prop>
+					<prop name="posy">-4195</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="InvertNode" index="5">
+				<param name="value" type="4" value="0.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2345</prop>
+					<prop name="posy">-3769</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="6">
+				<param name="in" type="4" value="0.000000"></param>
+				<portdef name="in" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">-2698</prop>
+					<prop name="posy">-4186</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GenerateSampleSetNode" index="7">
+				<param name="reference" type="31" value=""></param>
+				<param name="emissiontype" type="3" value="1"></param>
+				<param name="invertfilter" type="11" value="false"></param>
+				<param name="ratetype" type="3" value="2"></param>
+				<param name="pointratetype" type="3" value="0"></param>
+				<param name="enablemaxnumber" type="11" value="true"></param>
+				<param name="maxnumber" type="3" value="100000"></param>
+				<param name="ratecontrol" type="3" value="1"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="false"></param>
+				<param name="rate" type="4" value="1.000000"></param>
+				<param_ext name="reference" type="31" value=""></param_ext>
+				<portdef name="geometry" type="1024" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<portdef name="seed" type="2" structure="1" group="4" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="5" instance="0" port="0"></portdef>
+				<portdef name="rate" type="4" structure="1" group="6" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2074</prop>
+					<prop name="posy">-4196</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="8">
+				<param name="condition" type="11" value="false"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1910</prop>
+					<prop name="posy">-3668</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AddPointNode" index="9">
+				<param name="reference" type="31" value="Self"></param>
+				<param_ext name="reference" type="31" value="Self"></param_ext>
+				<portdef name="positions1" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<portdef name="oncreation1" type="4096" structure="1" group="4" instance="0" port="0"></portdef>
+				<portdef name="oncreation2" type="4096" structure="1" group="4" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1869</prop>
+					<prop name="posy">-4094</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Get Closest Location on Geometry" version="1.0" index="10">
+				<param name="Proximity_Method" type="3" value="0"></param>
+				<param name="Enable_Cutoff_Distance" type="11" value="false"></param>
+				<param name="Cutoff_Distance" type="4" value="1.000000"></param>
+				<portdef name="Enable_Cutoff_Distance" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Cutoff_Distance" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Geometry1" type="1024" structure="1" group="2" instance="0" port="0" groupname="Geometry1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2790</prop>
+					<prop name="posy">-3927</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Particle Orientation" version="1.0" index="11">
+				<param name="Reference" type="31" value="Self.Orientation"></param>
+				<param name="Orientation.Orientation_x" type="4" value="1.000000"></param>
+				<param name="Orientation.Orientation_y" type="4" value="0.000000"></param>
+				<param name="Orientation.Orientation_z" type="4" value="0.000000"></param>
+				<param name="Orientation.Orientation_angle" type="4" value="0.000000"></param>
+				<param_ext name="Reference" type="31" value="Self.Orientation"></param_ext>
+				<portdef name="Orientation" type="16384" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2295</prop>
+					<prop name="posy">-3927</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Particle Size" version="1.0" index="12">
+				<param name="Reference" type="31" value="Self.Size"></param>
+				<param name="Size" type="4" value="0.000000"></param>
+				<param_ext name="Reference" type="31" value="Self.Size"></param_ext>
+				<portdef name="Size" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-2090</prop>
+					<prop name="posy">-3745</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="inname" username="In_Name" basename="In Name" portlabel="In Name" exposetype="single"> </port>
+			<port index="3" portname="condition" username="Align_to_Geo" basename="Align to Geo" portlabel="Align to Geo" exposetype="single"> </port>
+			<port index="6" portname="in" username="Resolution" basename="Resolution" portlabel="Resolution" exposetype="single"> </port>
+			<port index="8" portname="condition" username="Scale_to_Fit" basename="Scale to Fit" portlabel="Scale to Fit" exposetype="single"> </port>
+			<port index="9" portname="add" username="Add" basename="Add" portlabel="Add" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="3" from_port="result" to_node="9" to_port="oncreation1"> </cnx>
+			<cnx from_node="1" from_port="out" to_node="12" to_port="Size"> </cnx>
+			<cnx from_node="2" from_port="rotation" to_node="11" to_port="Orientation"> </cnx>
+			<cnx from_node="11" from_port="Execute" to_node="3" to_port="iftrue"> </cnx>
+			<cnx from_node="12" from_port="Execute" to_node="8" to_port="iftrue"> </cnx>
+			<cnx from_node="10" from_port="Normal" to_node="2" to_port="pointat"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="10" to_port="Geometry1"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="7" to_port="geometry"> </cnx>
+			<cnx from_node="7" from_port="samples" to_node="9" to_port="positions1"> </cnx>
+			<cnx from_node="4" from_port="result" to_node="7" to_port="rate"> </cnx>
+			<cnx from_node="5" from_port="result" to_node="1" to_port="in"> </cnx>
+			<cnx from_node="6" from_port="out" to_node="4" to_port="value1"> </cnx>
+			<cnx from_node="6" from_port="out" to_node="5" to_port="value"> </cnx>
+			<cnx from_node="8" from_port="result" to_node="9" to_port="oncreation2"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="In_Name"> </item>
+			<item type="input" name="Resolution" min="0" max="0"> </item>
+			<item type="input" name="Align_to_Geo" min="0" max="0"> </item>
+			<item type="input" name="Scale_to_Fit" min="0" max="0"> </item>
+			<item type="output" name="Add"> </item>
+		</layout>
+	</definition>
+</xsi_file>
